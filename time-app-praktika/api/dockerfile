@@ -1,0 +1,17 @@
+#Комментрий 1
+FROM node:alpine 
+#Комментрий 2
+WORKDIR /time-app
+#Комментрий 3
+COPY package*.json ./
+#Комментрий 4
+RUN npm install 
+#Комментрий 5
+COPY . .
+#Комментрий 6
+EXPOSE 5000
+#Комментрий 7
+CMD [ "npm", "run", "dev"]
+
+
+
